@@ -9,11 +9,25 @@ using namespace std;
 int main()
 {
 	int Test[10];
+	int i = 0;
+	bool Status = true;
 
-	for (int i = 0; i < 10; ++i)
+	while (Status)
 	{
+		if (i == 10)
+		{
+			break;
+		}
 		Test[i] = i + 1;
 		cout << Test[i] << endl;
-	}
+ 		++i;
+	} 
+
+
+	//for (int i = 0; i < 10; ++i)
+	//{
+	//	Test[i] = i + 1;
+	//	cout << Test[i] << endl;
+	//}
 	return 0;
 }
