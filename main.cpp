@@ -12,16 +12,33 @@ int main()
 	int i = 0;
 	bool Status = true;
 
-	while (Status)
+Process:
+
+	if(i < 10)
 	{
-		if (i == 10)
-		{
-			break;
-		}
 		Test[i] = i + 1;
 		cout << Test[i] << endl;
- 		++i;
-	} 
+		++i;
+	} else
+	{
+		cout <<  endl;
+		cout << "Good Bye" << endl;
+		goto End;
+	}
+
+	goto Process;
+End:
+
+	//while (Status)
+	//{
+	//	if (i == 10)
+	//	{
+	//		break;
+	//	}
+	//	Test[i] = i + 1;
+	//	cout << Test[i] << endl;
+ //		++i;
+	//} 
 
 
 	//for (int i = 0; i < 10; ++i)
