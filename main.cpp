@@ -12,22 +12,32 @@ int main()
 	int i = 0;
 	bool Status = true;
 
-Process:
-
-	if(i < 10)
+	do
 	{
 		Test[i] = i + 1;
+		
 		cout << Test[i] << endl;
-		++i;
-	} else
-	{
-		cout <<  endl;
-		cout << "Good Bye" << endl;
-		goto End;
-	}
 
-	goto Process;
-End:
+		++i;
+	} while (i < 10);
+
+
+//Process:
+
+//	if(i < 10)
+//	{
+//		Test[i] = i + 1;
+//		cout << Test[i] << endl;
+//		++i;
+//	} else
+//	{
+//		cout <<  endl;
+//		cout << "Good Bye" << endl;
+//		goto End;
+//	}
+//
+//	goto Process;
+//End:
 
 	//while (Status)
 	//{
