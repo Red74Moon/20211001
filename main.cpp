@@ -8,5 +8,12 @@ using namespace std;
 
 int main()
 {
+	int Test[10];
+
+	for (int i = 0; i < 10; ++i)
+	{
+		Test[i] = i + 1;
+		cout << Test[i] << endl;
+	}
 	return 0;
 }
